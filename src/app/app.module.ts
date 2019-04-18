@@ -14,12 +14,19 @@ import {MatIconModule} from '@angular/material/icon';
 import {HttpClientModule} from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { OperatorDashboardComponent } from './components/operator-dashboard/operator-dashboard.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { CustomerDetailComponent } from './components/customer-detail/customer-detail.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingPageComponent,
+    OperatorDashboardComponent,
+    CustomerDetailComponent
   ],
   imports: [
     BrowserModule, 
@@ -35,7 +42,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatTabsModule,
     MatIconModule,
     MatGridListModule,
-    MatButtonModule
+    MatButtonModule, 
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
